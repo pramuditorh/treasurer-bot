@@ -13,6 +13,9 @@ def main():
     
     start_handler = CommandHandler('start', handler.start)
     dp.add_handler(start_handler)
+
+    kas_handler = CommandHandler('kas', handler.kas)
+    dp.add_handler(kas_handler)
     
     updater.start_polling()
 
