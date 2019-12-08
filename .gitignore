@@ -1,6 +1,5 @@
 # From Projects Folder
 *.json
-credentials.py
 
 ## Visual Studio Code
 .vscode/*
