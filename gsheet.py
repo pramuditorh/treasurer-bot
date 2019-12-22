@@ -11,8 +11,8 @@ client = gspread.authorize(creds)
 # Get spreadsheet by name configured in config.py
 # Select specific worksheet you are working on
 spreadsheet = client.open(config.GDRIVE_SHEET_NAME)
-kas_worksheet = spreadsheet.get_worksheet(2)
+kas_worksheet = spreadsheet.get_worksheet(3)
 
 def getKas():
-    kas_lists = kas_worksheet.get_all_values()
+    kas_lists = kas_worksheet.get_all_records()
     return kas_lists
