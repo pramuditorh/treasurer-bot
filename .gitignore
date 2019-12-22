@@ -1,6 +1,7 @@
 # From Projects Folder
 *.json
 config.py
+Procfile
 
 ## Visual Studio Code
 .vscode/*
