@@ -24,6 +24,7 @@ pyasn1-modules==0.2.7
 pycparser==2.19
 pylint==2.4.4
 python-dateutil==2.8.1
+python-dotenv==0.10.3
 python-telegram-bot==12.2.0
 pytz==2019.3
 requests==2.22.0
