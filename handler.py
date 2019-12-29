@@ -12,6 +12,7 @@ def kas(update, context):
     text = update.message.text.split()
     bulan = text[1].upper()
     df = pd.DataFrame(kas_gsheet)
+    df.index += 1
 
     context.bot.send_message(chat_id=update.effective_chat.id,
                             text="Bayar Kas\n{}".format(df[['NAMA', bulan]]))

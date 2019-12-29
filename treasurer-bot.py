@@ -16,9 +16,6 @@ def main():
 
     kas_handler = CommandHandler('kas', handler.kas)
     dp.add_handler(kas_handler)
-
-    #tes_handler = CommandHandler('tes', handler.tes)
-    #dp.add_handler(tes_handler)
     
     updater.start_polling()
 
