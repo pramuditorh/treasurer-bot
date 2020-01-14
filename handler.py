@@ -11,7 +11,7 @@ def kas(update, context):
     kas_gsheet = gsheet.getKas()
     text = update.message.text.split()
     #nama = text[1].capitalize()
-    bulan = text[2].upper()
+    bulan = text[1].upper()
     df = pd.DataFrame(kas_gsheet)
     df.index += 1
 
